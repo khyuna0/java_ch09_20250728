@@ -20,6 +20,12 @@ public class ABMain {
 		A.C.f2 = 50;
 		A.C.method2();
 		
+		System.out.println("==============");
+		
+		Button btn = new Button();
+		
+		btn.setListner(new CallListener());
+		btn.touch();
 		
 		
 	}

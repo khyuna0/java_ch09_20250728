@@ -1,5 +1,6 @@
 package com.khyuna0.ch09.part01;
 
+
 public class A {
 
 	public A() {
@@ -32,6 +33,24 @@ public class A {
 		public static void method2() {
 			 
 		 }
+		
+	// 로컬 클래스 
+		public void localMethod() {
+			class D { // 접근 제한자 public, private ... 있으면 안됨
+				D(){
+					System.out.println("D 객체 생성");
+				}
+				int f1;
+				void method1() {
+					
+				}
+			}
+				D d = new D();
+				d.f1 = 30;
+				d.method1();
+			
+		}
+		
 	}
 
 }
